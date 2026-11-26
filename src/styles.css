@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-desk: #f3eee4;
+  --color-desk-2: #f6f1e7;
+  --color-edge: #e0d6c8;
+  --color-panel: #f6f1e7;
+  --color-panel-2: #ebe4d8;
+  --color-cream: #1c2830;
+  --color-cream-2: #ebe4d8;
+  --color-rule: #d5dee4;
+  --color-ink: #1c2830;
+  --color-mute: #5e6e78;
+  --color-stamp: #9a3412;
+  --color-azure: #5e554a;
+  --color-tide: #3f6f5b;
+  --color-clay: #9a3412;
+  --color-clay-ink: #9a3412;
+  --color-good: #3f6f5b;
+
+  --shadow-sheet: 0 8px 24px rgba(60, 40, 20, 0.08);
+  --radius-sheet: 0.75rem;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: #d7e2e8;
+    color: #1c2830;
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-weight: 500;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid #1c2830;
+    outline-offset: 2px;
+  }
+}
+
+.sky {
+  background:
+    linear-gradient(180deg, rgba(232, 240, 244, 0.35), rgba(214, 226, 232, 0.45)),
+    url("/desk.jpg") center 20% / cover no-repeat fixed;
+}
+
+.dock {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.ext-dock,
+.ext-sheet {
+  bottom: calc(4.25rem + env(safe-area-inset-bottom));
+}
+
+.sheet-cap {
+  max-height: 70dvh;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rise {
+  animation: rise 320ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise {
+    animation: none;
+  }
+}

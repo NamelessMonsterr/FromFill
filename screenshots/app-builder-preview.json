@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "FormFill",
+      "hasCanvas": false,
+      "bodyTextLen": 561,
+      "bodyTextHash": "da92be1e0983268f3abeefec41ac86cd4b47c189b74cd0e97cced07b01b2d785",
+      "bodyTextPrefix": "FormFill People Fill Flow Sync DESIGN PREVIEW Answers, kept once",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "FormFill",
+      "hasCanvas": false,
+      "bodyTextLen": 568,
+      "bodyTextHash": "6b64801a6d3c6d3342925e5fefceb83daa5614b501cb4d59f8aea0d245661469",
+      "bodyTextPrefix": "FormFill People DESIGN PREVIEW Answers, kept once. Walk the samp",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
